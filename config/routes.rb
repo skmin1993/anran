@@ -4,11 +4,11 @@ Rails.application.routes.draw do
  
 
   constraints DomainConstraint.new('anran.com.my') do
-    root :to => 'welcome#my' , as: nil
+    root :to => 'welcome#my' 
 end
 
     get 'welcome/index' 
-   root 'welcome#index' 
+   root 'welcome#index' , as: nil
 
 
 
