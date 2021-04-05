@@ -20,9 +20,11 @@ end
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('mydomain.com')
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('localhost:3000')
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('http://localhost:3000/')
-if Rails.env.include?('anran')
-    root 'welcome#index'
-else
+if Rails.env.include?('anran.com.my')
     root 'welcome#my'
+elsif Rails.env.include?('an')
+    root 'welcome#my'
+else
+    root 'welcome#index'
   end
 end
