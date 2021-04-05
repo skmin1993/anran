@@ -3,9 +3,6 @@ Rails.application.routes.draw do
 
  
 
-  constraints DomainConstraint.new('mydomain.com') do
-    root :to => 'welcome#my' 
-end
 
     get 'welcome/index' 
    root 'welcome#index' , as: nil
@@ -17,4 +14,8 @@ end
       get :my
     end
 end
+
+  root  'welcome#my', as: nil, :constraints => DomainConstraint.new('anran.com.my')
+  root  'welcome#my', as: nil, :constraints => DomainConstraint.new('http://anran.com.my/')
+  root  'welcome#my', as: nil, :constraints => DomainConstraint.new('mydomain.com')
 end
