@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
  
 
-  constraints DomainConstraint.new('anran.com.my') do
+  constraints DomainConstraint.new('mydomain.com') do
     root :to => 'welcome#my' 
 end
 
