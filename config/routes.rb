@@ -18,4 +18,6 @@ end
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('anran.com.my')
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('http://anran.com.my/')
   root  'welcome#my', as: nil, :constraints => DomainConstraint.new('mydomain.com')
+
+     root 'welcome#index'
 end
