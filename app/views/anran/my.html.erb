@@ -46,10 +46,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-      <h1>
-        <span><%= image_tag "/assets/anran/anranstar-63640f0cac505911845f79fa7b9b8ed82416fda936606a4ecce4dd87dc0c902c.png", class: "logo-resize"%></span>
-        <span><%= image_tag "/assets/anran/anran-deff20bd41dedff1717fc0bfd5ea95b0611af628815c4b435761bc9e33556628.png", class: "logo-resize"%></span>
-      </h1>
+     
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -292,112 +289,6 @@
       </div>
     </section><!-- End Frequently Asked Questions Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Portfolio</h2>
-          <p>The experience of various customers in Anran.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">ALL</li>
-              <li data-filter=".filter-app">Person</li>
-              <li data-filter=".filter-card">Couple</li>
-              <li data-filter=".filter-web">Group</li>
-            </ul>
-          </div>
-        </div>
-
-          <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/single1.jpg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/single1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/single1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/group1.jpeg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/group1.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/group1.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/single2.jpg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/single2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/single2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/couple1.jpg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/couple1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/couple1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/group2.jpeg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/group2.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/group2.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/couple2.jpg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/couple2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/couple2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/couple3.jpg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/couple3.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/couple3.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="<%= asset_path('anran/group3.jpeg') %>" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="<%= asset_path('anran/group3.jpeg') %>" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                <a href="<%= asset_path('anran/group3.jpeg') %>" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
