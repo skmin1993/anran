@@ -2,14 +2,14 @@ require 'domain_constraint'
 Rails.application.routes.draw do
 
   constraints (DomainConstraint.new('anran.com.my')) do
-    root :to => 'anran#index', as: nil
+    root :to => 'anran#my', as: nil
       resources :anran, only: [:index] do
        collection do
         get :my
         end
       end
   end
-  
+
   constraints(DomainConstraint.new('viennahome.com.my')) do
     root :to => 'viennahome#index', as: nil
   end
@@ -30,5 +30,5 @@ Rails.application.routes.draw do
   end
 
 
-  root :to => 'anran#index', as: nil
+  root :to => 'anran#my', as: nil
 end
