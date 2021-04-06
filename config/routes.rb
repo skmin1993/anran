@@ -11,8 +11,8 @@ Rails.application.routes.draw do
       end
   end
 
-  constraints(DomainConstraint.new('admin.api.project.dev')) do
-    root :to => 'welcome#index', as: nil
+  constraints(DomainConstraint.new('viennahome.com.my')) do
+    root :to => 'viennahome#index', as: nil
   end
 
   root :to => 'viennahome#index', as: nil
