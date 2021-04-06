@@ -27,7 +27,7 @@
 
 
   <!-- Template Main CSS File -->
-  <%= stylesheet_link_tag "style.css" %>
+  <%= stylesheet_link_tag "styleanran.css" %>
 
 
 
@@ -47,8 +47,8 @@
 
       <div class="logo mr-auto">
       <h1>
-        <span><%= image_tag "/assets/anranstar-63640f0cac505911845f79fa7b9b8ed82416fda936606a4ecce4dd87dc0c902c.png", class: "logo-resize"%></span>
-        <span><%= image_tag "/assets/anran-deff20bd41dedff1717fc0bfd5ea95b0611af628815c4b435761bc9e33556628.png", class: "logo-resize"%></span>
+        <span><%= image_tag "anran/anranstar.png", class: "logo-resize"%></span>
+        <span><%= image_tag "anran/anran.png", class: "logo-resize"%></span>
       </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -62,7 +62,7 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="/welcome">Chinese</a></li>
+          <li><a href="/anran">Chinese</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -312,84 +312,84 @@
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up">
+          <div class="row portfolio-container" data-aos="fade-up">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="/assets/single1-03e2cacfaae63bb0f4a2493bbc9f9bb0aa5f9aa8368dadbb92b4109ebce86982.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/single1.jpg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/single1-03e2cacfaae63bb0f4a2493bbc9f9bb0aa5f9aa8368dadbb92b4109ebce86982.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-plus"></i></a>
-                <a href="/assets/single1-03e2cacfaae63bb0f4a2493bbc9f9bb0aa5f9aa8368dadbb92b4109ebce86982.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/single1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/single1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="/assets/group1-33179b3df2a2a77222f7e0f4c1b1ea44881e7d5b49834face480d9e8b2fe2678.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/group1.jpeg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/group1-33179b3df2a2a77222f7e0f4c1b1ea44881e7d5b49834face480d9e8b2fe2678.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                <a href="/assets/group1-33179b3df2a2a77222f7e0f4c1b1ea44881e7d5b49834face480d9e8b2fe2678.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/group1.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/group1.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="/assets/single2-f9817a64413c1a57bb91720adc14230601a4095495665c17ac096b360a5159be.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/single2.jpg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/single2-f9817a64413c1a57bb91720adc14230601a4095495665c17ac096b360a5159be.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
-                <a href="/assets/single2-f9817a64413c1a57bb91720adc14230601a4095495665c17ac096b360a5159be.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/single2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/single2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="/assets/couple1-e884a329166583c22ae75ed541092405c4be16c88b5af34f9dc63606bd71e4d2.jpg " class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/couple1.jpg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/couple1-e884a329166583c22ae75ed541092405c4be16c88b5af34f9dc63606bd71e4d2.jpg " data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-plus"></i></a>
-                <a href="/assets/couple1-e884a329166583c22ae75ed541092405c4be16c88b5af34f9dc63606bd71e4d2.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/couple1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/couple1.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="/assets/group2-1d860923ed946af2399fbfafbd4f3a988389209bd4b1c41be752f60d309c9072.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/group2.jpeg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/group2-1d860923ed946af2399fbfafbd4f3a988389209bd4b1c41be752f60d309c9072.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-plus"></i></a>
-                <a href="/assets/group2-1d860923ed946af2399fbfafbd4f3a988389209bd4b1c41be752f60d309c9072.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/group2.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/group2.jpeg') %>" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="/assets/couple2-ea09fe24c579d843b765f54b24250cb526fe00e5a47ca5b2056f138cc1332d6f.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/couple2.jpg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/couple2-ea09fe24c579d843b765f54b24250cb526fe00e5a47ca5b2056f138cc1332d6f.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-plus"></i></a>
-                <a href="/assets/couple2-ea09fe24c579d843b765f54b24250cb526fe00e5a47ca5b2056f138cc1332d6f.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/couple2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/couple2.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="/assets/couple3-8b4edcf400312da745c810b7ec1c0db401565cf3f61f741b6824579c606f447b.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/couple3.jpg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/couple3-8b4edcf400312da745c810b7ec1c0db401565cf3f61f741b6824579c606f447b.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-plus"></i></a>
-                <a href="/assets/couple3-8b4edcf400312da745c810b7ec1c0db401565cf3f61f741b6824579c606f447b.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/couple3.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/couple3.jpg') %>" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="/assets/group3-cad93ba88e64d1fbe6a855123666b65e179fe4371beebfacd78c0bcf4b4fbf2f.jpg" class="img-fluid" alt="">
+              <img src="<%= asset_path('anran/group3.jpeg') %>" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="/assets/group3-cad93ba88e64d1fbe6a855123666b65e179fe4371beebfacd78c0bcf4b4fbf2f.jpg" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                <a href="/assets/group3-cad93ba88e64d1fbe6a855123666b65e179fe4371beebfacd78c0bcf4b4fbf2f.jpg" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
+                <a href="<%= asset_path('anran/group3.jpeg') %>" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                <a href="<%= asset_path('anran/group3.jpeg') %>" class="venobox" title="Web 3"><i class="fa fa-search-plus"></i></a>
               </div>
             </div>
           </div>
@@ -610,7 +610,7 @@
   <%= javascript_include_tag "owl.carousel.min.js"%>
   <%= javascript_include_tag "aos.js"%>
   <!-- Template Main JS File -->
-  <%= javascript_include_tag "main.js"%>
+  <%= javascript_include_tag "mainanran.js"%>
 
 </body>
 

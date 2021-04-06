@@ -2,8 +2,8 @@ require 'domain_constraint'
 Rails.application.routes.draw do
 
   constraints (DomainConstraint.new('anran.com.my')) do
-    root :to => 'welcome#index', as: nil
-      resources :welcome, only: [:index] do
+    root :to => 'anran#index', as: nil
+      resources :anran, only: [:index] do
        collection do
         get :my
         end
@@ -30,5 +30,5 @@ Rails.application.routes.draw do
   end
 
 
-  root :to => 'welcome#index', as: nil
+  root :to => 'chinsan#index', as: nil
 end
