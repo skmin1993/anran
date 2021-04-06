@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/assets/anran/greentowel-40b1141f7d7471cd10ae3ec4f71044cc1866bbea8bf2e03fe4406aad0b234c8a.jpg") top center;
+  background: url("%= asset_path('anran/greentowel') %>") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
