@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("<%= asset_path('anran/greentowel') %>") top center;
+  background: url("/assets/greentowel-40b1141f7d7471cd10ae3ec4f71044cc1866bbea8bf2e03fe4406aad0b234c8a.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -454,7 +454,7 @@ section {
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url("<%= asset_path('anran/section-title-bg') %>") no-repeat;
+  background: url(/assets/section-title-bg-30def37593268009a2ebe40ed8f2509a3b2f34c0ef185291d82534a961ce6e53.png) no-repeat;
   z-index: -1;
 }
 
@@ -512,7 +512,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("<%= asset_path('anran/whitebackground') %>") center center no-repeat;
+  background: url("/assets/whitebackground-e39fef792ebf0f8028335f130120f94829083e737f44e93012d4ac8bd7a3b57d.png") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1094,7 +1094,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background: linear-gradient(rgba(20, 130, 130, 0.9), rgba(23, 152, 152, 0.9)), url("<%= asset_path('anran/book') %>") fixed center center;
+  background: linear-gradient(rgba(20, 130, 130, 0.9), rgba(23, 152, 152, 0.9)), url("/assets/book-a4d92082cc395e3114697e047c0c0fe5ad668d976938b4228414e170fecd7deb.jpg") fixed center center;
 }
 
 .faq .faq-list {
