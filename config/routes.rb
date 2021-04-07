@@ -14,6 +14,11 @@ Rails.application.routes.draw do
     root :to => 'viennahome#index', as: nil
   end
 
+
+  constraints(DomainConstraint.new('iconmaker.com.my')) do
+    root :to => 'iconmaker#index', as: nil
+  end  
+
  constraints(DomainConstraint.new('chinsan.com')) do
     root :to => 'chinsan#index', as: nil
     resources :product, only: [:index] do  
@@ -30,5 +35,5 @@ Rails.application.routes.draw do
   end
 
 
-  root :to => 'anran#index', as: nil
+  root :to => 'iconmaker#index', as: nil
 end
