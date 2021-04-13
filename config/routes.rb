@@ -21,7 +21,13 @@ Rails.application.routes.draw do
   end  
 
   constraints(DomainConstraint.new('bctherbalists.com.my')) do
-    root :to => 'viennahome#index', as: nil
+    root :to => 'bctherbal#index', as: nil
+      resources :bctherbal, only: [:index] do
+       collection do
+        end
+      end
+      resources :payment, only: [:index] do  
+      end
   end  
 
   constraints(DomainConstraint.new('chinsan.my')) do
