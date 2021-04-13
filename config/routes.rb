@@ -1,6 +1,7 @@
 require 'domain_constraint'
 Rails.application.routes.draw do
 
+
   constraints (DomainConstraint.new('anran.com.my')) do
     root :to => 'anran#index', as: nil
       resources :anran, only: [:index] do
@@ -27,7 +28,6 @@ Rails.application.routes.draw do
       end
       resources :payment, only: [:index] do  
       end
-
   end  
 
   constraints(DomainConstraint.new('chinsan.my')) do
