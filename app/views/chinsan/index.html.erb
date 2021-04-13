@@ -48,31 +48,31 @@
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
       <div class="logo mr-auto">
-        <h1 class="text-light"><span><img src="/assets/chinsanlogo-fe5b62d91f6d5bb9f508aae6231c21f4415984c867dda7568cab1fb60ef058f2.png" alt=""></span></h1>
+        <h1 class="text-light"><span><img src="<%= asset_path('chinsan/chinsanlogo.png') %>" alt=""></span></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>   
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/welcome/index">Home</a></li>
-          <li><a href="/welcome/index#about">About</a></li>
-          <li class="drop-down"><a href="/welcome/index#product">Products</a>
+          <li class="active"><a href="/chinsan">Home</a></li>
+          <li><a href="/chinsan#about">About</a></li>
+          <li class="drop-down"><a href="/chinsan#product">Products</a>
             <ul>
-              <li><a href="/product/dog_feed">Dog Food</a></li>
-              <li><a href="/product/chicken_feed">Chicken Feed</a></li>
-              <li><a href="/product/fish_feed">Fish Feed</a></li>
-              <li><a href="/product/cat_feed">Cat Food</a></li>
-              <li><a href="/product/cow_feed">Cow Feed</a></li>
-              <li><a href="/product/rabbit_feed">Rabbit Feed</a></li>
-              <li><a href="/product/duck_feed">Duck Feed</a></li>
+              <li><a href="/animal/dog_feed">Dog Food</a></li>
+              <li><a href="/animal/chicken_feed">Chicken Feed</a></li>
+              <li><a href="/animal/fish_feed">Fish Feed</a></li>
+              <li><a href="/animal/cat_feed">Cat Food</a></li>
+              <li><a href="/animal/cow_feed">Cow Feed</a></li>
+              <li><a href="/animal/rabbit_feed">Rabbit Feed</a></li>
+              <li><a href="/animal/duck_feed">Duck Feed</a></li>
             </ul>
           </li>
-          <li><a href="/welcome/index#contact">Contact</a></li>
+          <li><a href="/chinsan#contact">Contact</a></li>
         </ul>
     </div>
   </header><!-- End Header -->
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center" style=" background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/assets/chickenfeeding-f25de964f6dc0fab9d6d6b43b9c79f9442cad7233d78295409dfa805e5729473.jpg)top center no-repeat; background-size: cover; background-position: top ;background-repeat: no-repeat;"  >
+  <section id="hero" class="d-flex align-items-center" style=" background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('<%= asset_path('chinsan/chickenfeeding.jpg') %>')top center no-repeat; background-size: cover; background-position: top ;background-repeat: no-repeat;"  >
 
     <div class="container">
       <div class="row">
@@ -225,66 +225,66 @@
         </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
           <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/dog_feed" class="item-wrap fancybox">
+            <a href="/animal/dog_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Dog</h3>
                 <span>Food</span>
               </div>
-              <img class="img-fluid" src="/assets/dog-8cdce5d9c13e736fa0ced5cf42c61a8d7d75a7c0fde8e51c109648836a424b87.png">
+              <img class="img-fluid" src="<%= asset_path('chinsan/dog.png') %>">
             </a>
           </div>
           <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/chicken_feed" class="item-wrap fancybox">
+            <a href="/animal/chicken_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Chicken</h3>
                 <span>Feed</span>
               </div>
-              <img class="img-fluid" src="/assets/chicken111-7399e93af4b9846c0a5a3a656d222bd766156aff918be1e227ca6f7521f744b9.png">
+              <img class="img-fluid" src="<%= asset_path('chinsan/chicken111.png') %>">
             </a>
           </div>
           <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/fish_feed" class="item-wrap fancybox">
+            <a href="/animal/fish_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Fish</h3>
                 <span>Feed</span>
               </div>
-              <img class="img-fluid" src="/assets/fish-b8d6a6a1b832747d02ac4a21c6687541a6d4b86c982bef928ca391420c83a4be.png ">
+              <img class="img-fluid" src="<%= asset_path('chinsan/fish.png') %>">
             </a>
           </div>
           <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/cat_feed" class="item-wrap fancybox">
+            <a href="/animal/cat_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Cat</h3>
                 <span>Food</span>
               </div>
-              <img class="img-fluid" src="/assets/cat-7b13784e86eabbfd138299b8e123069a286360345c3e3befe86d8472d3ef02bb.png">
+              <img class="img-fluid" src="<%= asset_path('chinsan/cat.png') %>">
             </a>
           </div>
           <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/duck_feed" class="item-wrap fancybox">
+            <a href="/animal/duck_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Duck</h3>
                 <span>Feed</span>
               </div>
-              <img class="img-fluid" src="/assets/duck-6c50ada0c0bf463dcc372b9b710c63ca495d366cfd6872476b67fdbc90fc6023.png">
+              <img class="img-fluid" src="<%= asset_path('chinsan/duck.png') %>">
             </a>
           </div>
           <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/cow_feed" class="item-wrap fancybox">
+            <a href="/animal/cow_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Cow</h3>
                 <span>Feed</span>
               </div>
-              <img class="img-fluid" src="/assets/cowfeed-9b66a457a62528aa9a6d49fb9f526fc7919509ad156b9d115c6c305949dbeede.jpg">
+              <img class="img-fluid" src="<%= asset_path('chinsan/cowfeed.jpg') %>">
             </a>
           </div>
           <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/product/rabbit_feed" class="item-wrap fancybox">
+            <a href="/animal/rabbit_feed" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Rabbit</h3>
                 <span>Feed</span>
               </div>
-              <img class="img-fluid" src="/assets/rabbitfeed-2b791282d5071982c859473ae4f70de1ca70d46597684ad0eab121523bc92d1a.jpg">
+              <img class="img-fluid" src="<%= asset_path('chinsan/rabbitfeed.jpg') %>">
             </a>
           </div>
 
@@ -359,23 +359,23 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="fa fa-chevron-right"></i> <a href="/welcome/index">Home</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/welcome/index#about">About Us</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/welcome/index#product">Product</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/welcome/index#contact">Contact Us</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="chinsan">Home</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/chinsan#about">About Us</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/chinsan#product">Product</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/chinsan#contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/dog_feed">Dog Food</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/chicken_feed">Chicken Feed</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/fish_feed">Fish Feed</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/cat_feed">Cat Food</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/duck_feed">Duck Feed</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/cow_feed">Cow Feed</a></li>
-              <li><i class="fa fa-chevron-right"></i> <a href="/product/rabbit_feed">Rabbit Feed</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/dog_feed">Dog Food</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/chicken_feed">Chicken Feed</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/fish_feed">Fish Feed</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/cat_feed">Cat Food</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/duck_feed">Duck Feed</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/cow_feed">Cow Feed</a></li>
+              <li><i class="fa fa-chevron-right"></i> <a href="/animal/rabbit_feed">Rabbit Feed</a></li>
             </ul>
           </div>
         </div>

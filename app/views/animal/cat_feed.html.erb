@@ -1,0 +1,86 @@
+<div class="row mt20 mb20">
+  <%= render 'header.html.erb' %>
+</div>
+
+
+  <main id="main">
+
+      <!-- ======= Hero Section ======= -->
+  <section id="production" class="d-flex align-items-center" style=" background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('<%= asset_path('chinsan/catfeed.jpg') %>')top center no-repeat; background-size: cover; background-position: center ;background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <br><br><br><br><br><br>
+          <h1>Cat Feed</h1>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  <!-- ======= Works Section ======= -->
+    <section class="section site-portfolio">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <h2>Get the right cat feed here</h2>
+             <p>Select the correct one to growth bigger size.</p>
+          </div>
+          <div class="col-md-12 col-lg-6 text-left text-lg-right" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters" class="filters">
+              <a href="#" data-filter="*" class="active">All</a>
+              <a href="#" data-filter=".chicken">Chicken & Tuna</a>
+              <a href="#" data-filter=".seafood">Seafood</a>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+          <div class="item chicken col-sm-6 col-md-4 col-lg-4 mb-4" >
+            <a href="<%= asset_path('chinsan/cat_feed1.png') %>" class="item-wrap venobox" title="Fatty Cat">
+              <div class="work-info">
+                <h3>Fatty Cat</h3>
+                <span>8KG</span>
+              </div>
+              <img class="img-fluid" src="<%= asset_path('chinsan/cat_feed11.png') %>">
+            </a>
+          </div>
+          <div class="item seafood col-sm-6 col-md-4 col-lg-4 mb-4" >
+            <a href="<%= asset_path('chinsan/cat_feed2.png') %>" class="item-wrap venobox" title="Merry Cat Feed">
+              <div class="work-info">
+                <h3>Merry Cat</h3>
+                <span>8KG</span>
+              </div>
+              <img class="img-fluid" src="<%= asset_path('chinsan/cat_feed22.png') %>">
+            </a>
+          </div>
+          <div class="item seafood col-sm-6 col-md-4 col-lg-4 mb-4" >
+            <a href="<%= asset_path('chinsan/cat_feed3.png') %>" class="item-wrap venobox" title="C2 Cat Feed">
+              <div class="work-info">
+                <h3>C2 Cat Food</h3>
+                <span>10KG</span>
+              </div>
+              <img class="img-fluid" src="<%= asset_path('chinsan/cat_feed33.png') %>">
+            </a>
+          </div>
+          <div class="item seafood col-sm-6 col-md-4 col-lg-4 mb-4" >
+            <a href="<%= asset_path('chinsan/cat_feed4.png') %>" class="item-wrap venobox" title="Felina Feed">
+              <div class="work-info">
+                <h3>Felina</h3>
+                <span>7.2KG</span>
+              </div>
+              <img class="img-fluid" src="<%= asset_path('chinsan/cat_feed44.png') %>">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End  Works Section -->
+
+
+  </main><!-- End #main -->
+
+<div>
+  <%= render 'footer.html.erb' %>
+</div>
+
