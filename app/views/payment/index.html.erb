@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>本草堂</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="<%= asset_path('bctherbal/logo.png') %>" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "font-awesome.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %> 
+  <%= stylesheet_link_tag "boxicons.min.css" %> 
+  <%= stylesheet_link_tag "animate.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+  <%= stylesheet_link_tag "aos.css" %>
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "stylebctherbal.css" %>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-transparent">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="/welcome/index"><img src="<%= asset_path('bctherbal/logo.png')%>" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="/welcome/index">主页</a></li>
+          <li><a href="/welcome/index#services">症状</a></li>
+          <li><a href="/welcome/index#about">关于我们</a></li>
+          <li><a href="/welcome/index#portfolio">我们的产品</a></li>
+          <li><a href="/payment">付款方式</a></li>
+          <li><a href="/welcome/index#contact">联系我们</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="front" style="background-color:black;">
+      <br><br><br><br>
+  </section><!-- End Hero Section -->
+  <section id="payment" class="hero-container text-center container" data-aos="zoom-in" data-aos-delay="100">
+    <br> 
+    <h1 style="color:black; font-weight: bold;">付款方式</h1>
+    <div style="border-bottom: 1px solid black;"><br></div>
+    <br>
+    <h2 style="color:black;">第一步: <span style="font-size: 20px; ">先查询准确产品价格另加运费</span></h2>
+    <br>
+    <h3 style=" font-size:20px; color:black; font-weight: bold;">立即付款</h3>
+    <h3 style=" font-size:20px; color:black;">西马运费 - RM10</h3>
+    <h3 style=" font-size:20px; color:black;">东马运费 - RM17</h3>
+    <h3 style=" font-size:20px; color:black;">新加波运费 - RM50</h3>
+    <br>
+    <h3 style=" font-size:20px; color:black; font-weight: bold;">货到付款</h3>
+    <h3 style=" font-size:20px; color:black;">只限西马 - RM10
+      <br>&nbsp;&nbsp;&nbsp;&nbsp; 另加&nbsp;&nbsp;&nbsp;&nbsp;- RM20
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-weight: bold;">共</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - RM30  </h3>
+    <br>
+    <h2 style="color:black;">第二步: <span style="font-size: 20px; ">您可线上转账到以下户口</span></h2>
+    <img src="<%= asset_path('bctherbal/publicbank.png')%>" width="150" height="140" style="margin-top:-20px;">
+    <br>
+    <h3 style=" font-size:20px; color:black;">公司名字: Master Hu Herbal</h3>
+    <h3 style=" font-size:20px; color:black;">银行户口: 3218-7302-01 </h3>
+    <h2 style="color:black;">第二步: <span style="font-size: 20px; ">完成付款就可把收据发到一下的whatapps号码</span></h2>
+      <a href="https://wa.link/7fzs3g"><img src="<%= asset_path('bctherbal/whatapps.png')%>" width="90"></a>
+      <a href="https://wa.link/7fzs3g"><img src="<%= asset_path('bctherbal/whatappsbarcode.png')%>" width="140"></a>
+    <br><br><br><br>
+  </section>
+
+  <main id="main">
+
+
+    <!-- Vendor JS Files -->
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "counterup.min.js"%>
+  <%= javascript_include_tag "jquery.waypoints.min.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "superfish.min.js"%>
+  <%= javascript_include_tag "hoverIntent.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "aos.js"%>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="rtybUXQA"></script>
+
+
+  <!-- Template Main JS File -->
+  <%= javascript_include_tag "mainbctherbal.js"%>  
+
+</body>
+
+</html>
