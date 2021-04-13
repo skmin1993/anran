@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>本草堂</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="<%= asset_path('bctherbal/logo.png') %>" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "font-awesome.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %> 
+  <%= stylesheet_link_tag "boxicons.min.css" %> 
+  <%= stylesheet_link_tag "animate.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+  <%= stylesheet_link_tag "aos.css" %>
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "stylebctherbal.css" %>
+ 
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '373596407269888');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=373596407269888&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+  <!-- =======================================================
+  * Template Name: Regna - v2.1.0
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-transparent">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="/welcome/index"><img src="<%= asset_path('bctherbal/logo.png')%>" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="/welcome/index">主页</a></li>
+          <li><a href="#services">症状</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#portfolio">我们的产品</a></li>
+          <li><a href="/payment">付款方式</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" >
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>中药王-本草堂</h1>
+      <h2>马来西亚50年独家草药配方。三大产品：汤氏大补丸，补肾丸，水晶药膏。</h2>
+      <a href="#about" class="btn-get-started">点我开始</a>
+
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" style="background: #D4D4D4;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">老朋友！<span style="color:red;">9个症状里</span>中4个以上！真的是<span style="color:red;">肾虚</span>了！</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/forget1.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>健忘</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/losthair.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>脱发</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/peenight2.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>夜尿</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/early1.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>早泄</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/pee1.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>尿黄</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/shaking1.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>麻痹</i></a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/cantsleep.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>失眠</i></a></div>
+            </div>
+          </div>          
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/dirty.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>异味</i></a></div>
+            </div>
+          </div> 
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box" style=" background: url('<%= asset_path('bctherbal/cold.png')%>'); background-size: 100% 100%;">
+              <div class="icon"><a href=""><i>发冷</i></a></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
+  <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">肾虚不丢人，<span style="color:red;">无视治疗</span>伤害身边亲人。 挽回还来得及。<br>
+            <span style="color:red;">↓&nbsp;↓&nbsp;看这里↓&nbsp;↓&nbsp;</span></h3>
+          <p class="section-description"></p>
+        </div>
+
+
+     
+        <div class="row about-container">
+          
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">
+            邱天龍
+              <br>
+            男性大补丸</h2>
+            <p>
+              马来西亚50年独家草药配方。
+              汤氏草药，重视自己的身体保健情况。
+              有效<b >改善男性腰酸背痛，活血化淤、提早收工、有心无力、尿泡、尿不尽、重异味、抗老化、大補中气、提神醒脑、降胆固醇，中年脱发、高血脂、失眠 、健忘</b>。
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fa fa-heartbeat"></i></div>
+              <h4 class="title"><a href=" ">纯中药配制</a></h4>
+              <p class="description">&nbsp;</p>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">百分百无类固醇</a></h4>
+              <p class="description">&nbsp;</p>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">百分百无止痛剂</a></h4>
+              <p class="description">&nbsp;</p>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href=""> 符合马来西亚国家药物监控局安全标准 </a></h4>
+              <p class="description">&nbsp;</p>
+            </div>
+          </div>            
+          <div class="col-lg-5 content order-lg-1 order-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="<%= asset_path('bctherbal/dapuwan.jpg')%>" style="width: 100%;
+  height: auto;" width="600" height="600" >
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3 class="section-title">我们的产品</h3>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product1">
+              <img src="<%= asset_path('bctherbal/productfirst1.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">      
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product1.png') %>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product2">
+              <img src="<%= asset_path('bctherbal/productfirst2.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">      
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product2.png') %>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product3">
+              <img src="<%= asset_path('bctherbal/productfirst3.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">      
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product3.png') %>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product4">
+              <img src="<%= asset_path('bctherbal/productfirst4.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">      
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product4.png') %>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-card">
+            <div class="portfolio-product5">
+              <img src="<%= asset_path('bctherbal/productfirst5.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product5.png')%>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product6">
+              <img src="<%= asset_path('bctherbal/productfirst6.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <div class="icon-box">
+                    <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product6.png')%>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6 col-6 portfolio-item filter-app">
+            <div class="portfolio-product7">
+              <img src="<%= asset_path('bctherbal/productfirst7.png')%>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="/payment" target="_blank"><button type="button" class="btn btn-danger">预购</button></a>
+                    <a href="<%= asset_path('bctherbal/product7.png')%>" data-gall="portfolioGallery" class="venobox" title="减脂茶"><button type="button" class="btn btn-danger">🔍</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <br>
+
+
+
+        <div class="section-header">
+          <h3 class="section-title">我们的面子书</h3>
+        </div>
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <div class="fb-page" data-href="https://www.facebook.com/bctherbalists" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/bctherbalists" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bctherbalists">中药王-本草堂 Bct Herbalists &amp; Wholesale</a></blockquote></div>
+    </div>
+  </div>
+  
+
+<br><br>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">联系我们</h3>
+        </div>
+      </div>
+
+      <div class="container mt-5" style="margin-right:95px;">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>中药王-本草堂</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>016-705 0808</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="tel:0167050808" target="_blank" class="facebook"><i class="fa fa-phone"></i></a>
+              <a href="https://www.facebook.com/bctherbalists"  target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/bct_168/"  target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://wa.link/4b5i7a"  target="_blank" class="face-to-face"><i class="fa fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+      -->
+        Designed by <a href="http://tweb.com.my/">TWEB COMMERCE SERVICES</a>
+
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v9.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_CN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=install_email
+        page_id="115429020192809">
+      </div>
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <a href="https://wa.link/4b5i7a"class="back-to-facebook"><img src="<%= asset_path('bctherbal/whatapps.png')%>" width="60"></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "counterup.min.js"%>
+  <%= javascript_include_tag "jquery.waypoints.min.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "superfish.min.js"%>
+  <%= javascript_include_tag "hoverIntent.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "aos.js"%>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="rtybUXQA"></script>
+
+
+  <!-- Template Main JS File -->
+  <%= javascript_include_tag "mainbctherbal.js"%>  
+
+</body>
+
+</html>
