@@ -16,12 +16,12 @@ Rails.application.routes.draw do
   end
 
 
-  constraints(DomainConstraint.new('iconmaker.com.my')) do
+  constraints(DomainConstraint.new('iconmakergroup.com.my')) do
     root :to => 'iconmaker#index', as: nil
   end  
 
   constraints(DomainConstraint.new('bctherbalists.com.my')) do
-  root :to => 'iconmaker#index', as: nil
+    root :to => 'viennahome#index', as: nil
   end  
 
   constraints(DomainConstraint.new('chinsan.my')) do
