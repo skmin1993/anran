@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
 
-  constraints(DomainConstraint.new('viennahome.com.my')) do
+  constraints(DomainConstraint.new('viennahome.com.my' || 'www.viennahome.com.my')) do
     root :to => 'viennahome#index', as: nil
   end
 
