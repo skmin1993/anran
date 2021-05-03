@@ -50,10 +50,36 @@ Rails.application.routes.draw do
 
   constraints(DomainConstraint.new('iconmakergroup.com.my')) do
     root :to => 'iconmaker#index', as: nil
+
+    resources :about, only: [:index] do
+    end
+
+    resources :contact_us, only: [:index] do
+    end
+
+    resources :service, only: [:index] do
+    end
+
+    resources :portfolio, only: [:index] do
+    end
+
   end  
 
   constraints(DomainConstraint.new('www.iconmakergroup.com.my')) do
     root :to => 'iconmaker#index', as: nil
+
+    resources :about, only: [:index] do
+    end
+
+    resources :contact_us, only: [:index] do
+    end
+
+    resources :service, only: [:index] do
+    end
+
+    resources :portfolio, only: [:index] do
+    end
+
   end
 
   constraints(DomainConstraint.new('yoshiyoshirobata.com.my')) do
@@ -132,5 +158,13 @@ Rails.application.routes.draw do
     end
   end
 
-  root :to => 'bctherbal#index', as: nil
+
+    resources :iconmaker, only: [:index] do
+        collection do
+          get :about
+        end
+    end
+
+   
+  root :to => 'yoshirobata#index', as: nil
 end
