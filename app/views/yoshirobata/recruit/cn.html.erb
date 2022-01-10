@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Delicious Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+ 
+  <!-- Vendor CSS Files -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %> 
+  <%= stylesheet_link_tag "boxicons.min.css" %> 
+  <%= stylesheet_link_tag "animate.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "styleyoshirobata.css" %>
+
+  <!-- =======================================================
+  * Template Name: Delicious - v2.1.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+    <div class="container text-right">
+      <a href="http://wa.me/601110501169?text=Hi,I just visit your website. I wish to make delivery order from you." target="_blank"> <span><i class="fa fa-phone"></i>+6 011-10501169</span></a>
+      <i class="fa fa-clock-o"></i> Mon-Sun: 11:00 AM - 22:00 PM
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><span><img src="<%= asset_path'yoshirobata/robatalogo.png' %>" alt=""></span></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>   
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><%= link_to "主页", cn_yoshirobata_home_index_path(anchor: "reviews")%></li>
+          <li><%= link_to "关于我们", cn_yoshirobata_home_index_path(anchor: "about")%></li>
+          <li><%= link_to "特别", cn_yoshirobata_home_index_path(anchor: "specials")%></li>
+          <li><%= link_to "菜单", cn_yoshirobata_menu_index_path%></li>
+          <li><%= link_to "图片", cn_yoshirobata_home_index_path(anchor: "gallery")%></li>
+          <li><%= link_to "联系我们", cn_yoshirobata_home_index_path(anchor: "contact")%></li>
+          <li><%= link_to "聘请", cn_yoshirobata_recruit_index_path%></li>
+          <li><%= link_to "EN", yoshirobata_recruit_index_path%></li>
+          <li class="book-a-table text-center"><a href="http://wa.me/601110501169?text=Hi,I just visit your website. I wish to make delivery order from you."  target="_blank" ><i class="fa fa-whatsapp"></i>外送服务</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+   <!-- ======= Hero Section ======= -->
+  <section id="recruit-home">
+  </section><!-- End Hero -->
+
+<br><br><br><br><br>
+
+  <main id="main">
+  </main><!-- End #main -->
+
+
+          <div class="col-lg-12 col-md-8 menu-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path'yoshirobata/recruit.jpg' %>" class="venobox" data-gall="gallery-item">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <img src="<%= asset_path'yoshirobata/recruit.jpg' %>" style="max-width: 100%; height: auto;" alt="" class="img-fluid">
+
+              </a>
+            </div>
+          </div>
+    <div class="row" style='background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(<%= asset_path'yoshirobata/sushiroll.jpg' %>) center no-repeat; background-size: cover; '>
+          <div class="col-lg-12 d-flex justify-content-center">
+            <h3>
+              <br>
+              联系我们
+              <br>
+            </h3>
+         
+          </div>
+          <div class="col-lg-12 d-flex justify-content-center">
+            <a href="tel:0163942165" class="facebook" target="_blank"><i class="fa fa-phone"  style="font-size:50px;"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="http://wa.me/60163942165" target="_blank"> <span><i class="fa fa-whatsapp" style="font-size:50px;"></i></span></a>
+          </div>
+          <div class="col-lg-12 d-flex justify-content-center">
+            <br>
+          </div>
+      </div>
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Yoshi Yoshi Robata</h3>
+      <p>在正确的地方寻找鳗鱼的爱.</p>
+      <div class="social-links">
+
+        <a href="http://wa.me/601110501169" target="_blank"> <span><i class="fa fa-whatsapp"></i></span></a>
+        <a href="https://www.facebook.com/yoshirobata" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yoshirobata/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>YOSHI YOSHI ROBATA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by TWEB COMMERCE SERVICES</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "jquery.sticky.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "mainyoshirobata.js"%>
+
+</body>
+
+</html>

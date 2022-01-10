@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Delicious Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+ 
+  <!-- Vendor CSS Files -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %> 
+  <%= stylesheet_link_tag "boxicons.min.css" %> 
+  <%= stylesheet_link_tag "animate.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "styleyoshirobata.css" %>
+
+
+  <!-- =======================================================
+  * Template Name: Delicious - v2.1.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+    <div class="container text-right">
+      <a href="http://wa.me/601110501169?text=Hi,I just visit your website. I wish to make delivery order from you." target="_blank"> <span><i class="fa fa-phone"></i>+6 011-10501169</span></a>
+      <i class="fa fa-clock-o"></i> Mon-Sun: 11:00 AM - 22:00 PM
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><span><img src="/assets/robatalogo-0626c44362f050fffa825ff93d4557adb95aae4f0d613c86f806376ed91c4ac3.png" alt=""></span></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>   
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><%= link_to "主页", cn_yoshirobata_home_index_path%></li>
+          <li><%= link_to "关于我们", cn_yoshirobata_home_index_path(anchor: "about")%></li>
+          <li><%= link_to "特别", cn_yoshirobata_home_index_path(anchor: "specials")%></li>
+          <li><%= link_to "菜单", cn_yoshirobata_menu_index_path%></li>
+          <li><%= link_to "图片", cn_yoshirobata_home_index_path(anchor: "gallery")%></li>
+          <li><%= link_to "联系我们", cn_yoshirobata_home_index_path(anchor: "contact")%></li>
+          <li><%= link_to "聘请", cn_yoshirobata_recruit_index_path%></li>
+          <li><%= link_to "EN", yoshirobata_menu_index_path%></li>
+          <li class="book-a-table text-center"><a href="http://wa.me/601110501169?text=Hi,I just visit your website. I wish to make delivery order from you."  target="_blank" ><i class="fa fa-whatsapp"></i>外送服务</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+   <!-- ======= Hero Section ======= -->
+  <section id="menu-home">
+  </section><!-- End Hero -->
+
+<br><br><br><br><br>
+
+  <main id="main">
+  </main><!-- End #main -->
+
+  <!-- ======= Gallery Section ======= -->
+    <section id="menu" class="menu gallery">
+      <div class="container-fluid">
+
+
+        <div class="section-title">
+          <h2> 我们的<span> 菜单</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">显示所有</li>
+              <li data-filter=".filter-menu">菜单</li>
+              <li data-filter=".filter-appetizer">前菜</li>
+              <li data-filter=".filter-salads">沙拉</li>
+              <li data-filter=".filter-sashimi">剑身</li>
+              <li data-filter=".filter-housespeciality">特色里卷</li>
+              <li data-filter=".filter-sushimoriawase">寿司么锦</li>
+              <li data-filter=".filter-nigirisushi">握寿司</li>
+              <li data-filter=".filter-gunkansushi">军航</li>
+              <li data-filter=".filter-inarisushi">稻荷</li>
+              <li data-filter=".filter-makimono">里卷&细卷 </li>
+              <li data-filter=".filter-temaki">手卷</li>
+              <li data-filter=".filter-agemono">炸物</li>
+              <li data-filter=".filter-yakimono">烧物</li>
+              <li data-filter=".filter-teeppanmono">炒物</li>
+              <li data-filter=".filter-menrui">面类</li>
+              <li data-filter=".filter-nabemono">锅物</li>
+              <li data-filter=".filter-bento">便当</li>
+              <li data-filter=".filter-donburi">盖饭</li>
+              <li data-filter=".filter-drinks">饮料&鲜果汁&甜品</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-3 col-md-4 menu-item filter-menu dummy">
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-menu dummy">
+            <div class="gallery-item menu-content" >
+              <a href="<%= asset_path "yoshirobata/yoshimenu1.png"%>" class="venobox"   title="菜单1-页数1" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu1.png"%>"  alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-appetizer">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu2.png"%>" class="venobox"  title="前菜1-页数2" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu2.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-appetizer">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu3.png"%>" class="venobox"  title="前菜2-页数3" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu3.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-appetizer">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu4.png"%>" class="venobox"  title="前菜3-页数4" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu4.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-sashimi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu5.png"%>" class="venobox"  title="剑身1-页数5" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu5.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-sashimi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu6.png"%>" class="venobox"  title="剑身2-页数6" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu6.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-salads">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu7.png"%>" class="venobox"  title="沙拉1-页数7" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu7.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-sushimoriawase">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu8.png"%>" class="venobox"  title="什锦寿司1-页数8" data-gall="gallery-item">
+                <img src="<%= asset_path "yoshirobata/yoshimenu8.png"%>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-nigirisushi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu9.png"%>" class="venobox"  title="握寿司1-页数9" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu9.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-nigirisushi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu10.png"%>" class="venobox"  title="握寿司2-页数10" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu10.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-gunkansushi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu11.png"%>" class="venobox"  title="军航1-页数11" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu11.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-inarisushi">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu12.png"%>" class="venobox"  title="稻荷1-页数12" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu12.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-housespeciality">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu13.png"%>" class="venobox"  title="特色里卷1-页数13" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu13.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-makimono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu14.png"%>" class="venobox"  title="手卷1-页数14" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu14.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+ 
+          <div class="col-lg-3 col-md-4 menu-item filter-temaki">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu15.png"%>" class="venobox"  title="手卷1-页数15" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu15.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-yakimono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu16.png"%>" class="venobox"  title="烧物1-页数16" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu16.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-agemono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu17.png"%>" class="venobox"  title="炸物1-页数17" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu17.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-yakimono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu18.png"%>" class="venobox"  title="炒物1-页数18" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu18.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-teeppanmono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu19.png"%>" class="venobox"  title="炒物2-页数19" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu19.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-nabemono">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu20.png"%>" class="venobox"  title="锅物1-页数20" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu20.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-menrui">
+            <div class="gallery-item menu-content"> 
+              <a href="<%= asset_path "yoshirobata/yoshimenu21.png"%>" class="venobox"  title="面类1-页数21" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu21.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-donburi"> 
+            <div class="gallery-item menu-content"> 
+              <a href="<%= asset_path "yoshirobata/yoshimenu22.png"%>" class="venobox"  title="盖饭1-页数22" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu22.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-bento"> 
+            <div class="gallery-item menu-content"> 
+              <a href="<%= asset_path "yoshirobata/yoshimenu23.png"%>" class="venobox"  title="便当1-页数23" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu23.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-ishiyaki"> 
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu24.png"%>" class="venobox"  title="石烧1-页数24" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu24.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter-drinks">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu25.png"%>" class="venobox"  title=">饮料&鲜果汁&甜品-页数25" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu25.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 menu-item filter">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu26.png"%>" class="venobox"  title="清酒&烧酒&啤酒&烈酒-页数26" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu26.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 menu-item filter-menu dummy">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path "yoshirobata/yoshimenu27.png"%>" class="venobox"  title="菜单2-页数27" data-gall="gallery-item">
+                  <img src="<%= asset_path "yoshirobata/yoshimenu27.png"%>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Yoshi Yoshi Robata</h3>
+      <p>在正确的地方寻找鳗鱼的爱.</p>
+      <div class="social-links">
+
+        <a href="http://wa.me/601110501169" target="_blank"> <span><i class="fa fa-whatsapp"></i></span></a>
+        <a href="https://www.facebook.com/yoshirobata" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yoshirobata/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>YOSHI YOSHI ROBATA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by TWEB COMMERCE SERVICES</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "jquery.sticky.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "mainyoshirobata.js"%>
+
+</body>
+
+</html>

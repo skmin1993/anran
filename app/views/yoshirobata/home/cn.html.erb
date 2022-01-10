@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
  
+  <!-- Vendor CSS Files -->
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <%= stylesheet_link_tag "bootstrap.min.css" %>
@@ -58,14 +60,14 @@
       </div>   
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active my-link"><a href="#hero">主页</a></li>
-          <li ><a href="#about ">关于我们</a></li>
-          <li ><a href="#specials">特别</a></li>
-          <li ><a href="/menu">菜单</a></li>
-          <li ><a href="#gallery">图片</a></li>
-          <li ><a href="#contact">联系我们</a></li>
-          <li class="my-link"><a href="/recruit">聘请</a></li>
-          <li class="my-link"><a href="/welcome/my">EN</a></li>
+          <li class="active"><%= link_to "主页", cn_yoshirobata_home_index_path%></li>
+          <li><%= link_to "关于我们", cn_yoshirobata_home_index_path(anchor: "about")%></li>
+          <li><%= link_to "特别", cn_yoshirobata_home_index_path(anchor: "specials")%></li>
+          <li><%= link_to "菜单", cn_yoshirobata_menu_index_path%></li>
+          <li><%= link_to "图片", cn_yoshirobata_home_index_path(anchor: "gallery")%></li>
+          <li><%= link_to "联系我们", cn_yoshirobata_home_index_path(anchor: "contact")%></li>
+          <li><%= link_to "聘请", cn_yoshirobata_recruit_index_path%></li>
+          <li><%= link_to "EN", yoshirobata_home_index_path%></li>
            <li class="drop-down btn btn-danger"><a >外送服务</a>
                 <ul>
                   <li><a href="http://bit.ly/YoshiKepongOrderLink"  target="_blank" ><i class="fa fa-whatsapp"> Kepong</i></a></li>
@@ -88,7 +90,7 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style=" background: url(/assets/sushicover-ee472f6be4ca6b29dc239e300c0c332da13439cd00a6391a612281cc63758bdb.png) center no-repeat; background-size: cover; " >
+          <div class="carousel-item active" style=" background: url(<%= asset_path'yoshirobata/sushicover.png' %>) center no-repeat; background-size: cover; " >
             <div class="carousel-container">
               <div class="carousel-content container">
                 <div class="row">
@@ -105,7 +107,7 @@
           </div>
 
           <!-- Slide 2 -->
-            <div class="carousel-item" style="background: url(/assets/sushi3-308bb4eb94be0993d64c71769bad14842777742c7966e1e4b6a3f2e651c1c495.jpg) center no-repeat; background-size: cover; ">
+            <div class="carousel-item" style="background: url(<%= asset_path'yoshirobata/sushi3.jpg' %>) center no-repeat; background-size: cover; ">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>寿司和芥末</span>-在一起更好。</h2>
@@ -118,7 +120,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(/assets/sushicover3-89af06d9a1b63fb91e94c8acd9cce35541bb13e13d742842977c5934fad423b9.png) center no-repeat; background-size: cover; ;">
+          <div class="carousel-item" style="background: url(<%= asset_path'yoshirobata/sushicover3.png' %>) center no-repeat; background-size: cover; ;">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>寿司</span>目标</h2>
@@ -154,7 +156,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("/assets/sushivideo-ef991424e6b077d8b856fec4c9dec99d816822208952b56ceb275ae24709c701.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url(<%= asset_path'yoshirobata/sushivideo.jpg' %>);'>
             <a href="https://www.youtube.com/watch?v=o3jCAKkLdTs" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -184,7 +186,7 @@
 
 
     <!-- ======= Whu Us Section ======= -->
-    <section id="why-us" class="why-us"style=' background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/assets/yoshifont-26ca7c8463170e6c656c96c6d22a8e2999ed843c91907df7a92ba034551d98db.png") center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
+    <section id="why-us" class="why-us"style=' background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(<%= asset_path'yoshirobata/yoshifont.png' %>) center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
       <div class="container" >
 
 
@@ -225,7 +227,7 @@
     </section><!-- End Whu Us Section -->
 
     <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials" style='background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("/assets/sushiroll-2d30fa7bd55293c8c2aab2f34673f398ae067fa6d86676a8aee6d9d029ec8187.jpg") center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
+    <section id="specials" class="specials" style='background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(<%= asset_path'yoshirobata/sushiroll.jpg' %>) center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
       <div class="container">
 
         <div class="section-title">
@@ -260,7 +262,7 @@
                     <p></p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="/assets/handsushi-19884345371edfc4e826afa0bc0a4bb555d34a59de7406c32d462a3dc6ac415f.jpg" alt="" class="img-fluid">
+                    <img src="<%= asset_path('yoshirobata/handsushi.jpg') %>" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -272,7 +274,7 @@
                     <p>大米不应该碰到酱油。它已经由厨师调味，并且大米在蘸酱过程中可能会破裂。仅鱼/海鲜/鸡蛋应接触液体。</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="/assets/sushifish-202832d6b3216a0bca9559d2c9d401195e12086d450912aa81ca02b5b0a8eb6a.jpg" alt="" class="img-fluid">
+                    <img src="<%= asset_path('yoshirobata/sushifish.jpg') %>" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -284,7 +286,7 @@
                     <p>不要将筷子揉在一起。不使用时，应将它们平行放置在支架或酱油盘上。用餐结束后，也应将它们放置在那里。</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="/assets/chopstick-0e19ff846ec6b469be9455f4fe89b762cf4d7c71cd20d0e21814932709dc7802.jpg" alt="" class="img-fluid">
+                    <img src="<%= asset_path('yoshirobata/chopstick.jpg') %>" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -296,7 +298,7 @@
                     <p>如果需要添加芥末，请用筷子或生姜片将其涂在鱼上。用筷子上多余的芥末食用也被认为是不好的形式。</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="/assets/sushitop-82ef9419c935f28ee875e601373325d13e4fe7a9ae59d534c37f687fdf13dae0.jpg" alt="" class="img-fluid">
+                    <img src="<%= asset_path('yoshirobata/sushitop.jpg') %>" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -331,8 +333,8 @@
 
           <div class="col-lg-3 col-md-4 portfolio-item filter-kepong ">
              <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/restaurant6.jpg') %>" class="venobox"  title="Kepong 1" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/restaurant6.jpg') %>" alt="" class="img-fluid">
+              <a href=" <%= asset_path('yoshirobata/restaurant6.jpg') %>" class="venobox"  title="Kepong 1" data-gall="gallery-item">
+                <img src=" <%= asset_path('yoshirobata/restaurant6.jpg') %>" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -380,8 +382,8 @@
 
         <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/restaurant5.jpg') %>" class="venobox"  title="Kepong 7" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/restaurant5.jpg') %>" alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/restaurant5.jpg') %> " class="venobox"  title="Kepong 7" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant5.jpg') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -403,36 +405,36 @@
 
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi2.png') %> " class="venobox"  title="Sushi 2" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi2.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai1.png') %> " class="venobox"  title="Sushi 2" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai1.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div> 
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi3.png') %> " class="venobox"  title="Sushi 3" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi3.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai2.png') %> " class="venobox"  title="Sushi 3" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai2.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi4.png') %> " class="venobox"  title="Sushi 4" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi4.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai3.png') %> " class="venobox"  title="Sushi 4" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai3.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi5.png') %> " class="venobox"  title="Sushi 5" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi51.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai4.png') %> " class="venobox"  title="Sushi 5" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai4.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi6.png') %> " class="venobox"  title="Sushi 6" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi6.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai5.png') %> " class="venobox"  title="Sushi 6" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai5.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>          
@@ -445,8 +447,8 @@
           </div>   
           <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
             <div class="gallery-item menu-content">
-              <a href="<%= asset_path('yoshirobata/sushi8.png') %> " class="venobox"  title="Sushi 8" data-gall="gallery-item">
-                <img src="<%= asset_path('yoshirobata/sushi8.png') %> " alt="" class="img-fluid">
+              <a href="<%= asset_path('yoshirobata/kuchai6.png') %> " class="venobox"  title="Sushi 8" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai6.png') %> " alt="" class="img-fluid">
               </a>
             </div>
           </div>             
