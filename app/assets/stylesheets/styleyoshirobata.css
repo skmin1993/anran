@@ -143,11 +143,13 @@ h1, h2, h3, h4, h5, h6 {
 #recruit-home {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/assets/redhiring-70c819d987656eaa32b9efbcefb7d9df61ce5ed8b6dfa056be335a83cdc26440.png") center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(yoshirobata/redhiring.png) center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
 }
+
+
 
 #recruit-home .hero-container {
   position: absolute;
@@ -226,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 #menu-home {
   width: 100%;
   height: 35vh;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/assets/sushiroll-6ad370ed068ee9ef0df0c9e13cf2cf5e3dbf4655fa10339c9323640859b3366e.png") center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("yoshirobata/sushiroll.png") center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
