@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Delicious Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+ 
+  <!-- Vendor CSS Files -->
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %> 
+  <%= stylesheet_link_tag "boxicons.min.css" %> 
+  <%= stylesheet_link_tag "animate.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "styleyoshirobata.css" %>
+
+  <!-- =======================================================
+  * Template Name: Delicious - v2.1.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+    <div class="container text-right">
+      <a href="http://wa.me/601110501169?text=Hi,I just visit your website. I wish to make delivery order from you." target="_blank"> <span><i class="fa fa-phone"></i>+6 011-10501169</span></a>
+      <i class="fa fa-clock-o"></i> 星期一至星期日: 11:00 AM - 22:00 PM
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><span><img src="/assets/robatalogo-0626c44362f050fffa825ff93d4557adb95aae4f0d613c86f806376ed91c4ac3.png" alt=""></span></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>   
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active my-link"><a href="#hero">主页</a></li>
+          <li ><a href="#about ">关于我们</a></li>
+          <li ><a href="#specials">特别</a></li>
+          <li ><a href="/menu">菜单</a></li>
+          <li ><a href="#gallery">图片</a></li>
+          <li ><a href="#contact">联系我们</a></li>
+          <li class="my-link"><a href="/recruit">聘请</a></li>
+          <li class="my-link"><a href="/welcome/my">EN</a></li>
+           <li class="drop-down btn btn-danger"><a >外送服务</a>
+                <ul>
+                  <li><a href="http://bit.ly/YoshiKepongOrderLink"  target="_blank" ><i class="fa fa-whatsapp"> Kepong</i></a></li>
+                  <li><a href="http://bit.ly/YoshiKuchaiOrderLink"  target="_blank" ><i class="fa fa-whatsapp"> Kuchai Lama</i></a></li>
+                </ul>
+              </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style=" background: url(<%= asset_path'yoshirobata/sushicover.png' %>) center no-repeat; background-size: cover; " >
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <div class="row">
+                  <h2 class="animate__animated animate__fadeInDown col-1"><span >日本 </span> 寿司 </h2>
+                  <br>
+                </div>
+                <div class="row">
+                  <br><br>
+                  <br><br><br>
+                  <br>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+            <div class="carousel-item" style="background: url(<%= asset_path'yoshirobata/sushi3.jpg' %>) center no-repeat; background-size: cover; ">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>寿司和芥末</span>-在一起更好。</h2>
+                <p class="animate__animated animate__fadeInUp">爱情和寿司很相似。您绝对不能拥有太多。</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">我们的菜单</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(<%= asset_path'yoshirobata/sushicover3.png' %>) center no-repeat; background-size: cover; ;">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>寿司</span>目标</h2>
+                <p class="animate__animated animate__fadeInUp">i’m soy into you.</p>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">我们的菜单</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon fa fa-arrow-left" aria-hidden="true"></span>
+          <span class="sr-only">上</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon fa fa-arrow-right" aria-hidden="true"></span>
+          <span class="sr-only">下</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url(<%= asset_path'yoshirobata/sushivideo.jpg' %>);'>
+            <a href="https://www.youtube.com/watch?v=o3jCAKkLdTs" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content"  data-aos="fade-up">
+              <h3  data-aos="fade-up" >为何寿司好 <strong></strong></h3>
+              <ul>
+                <li><i class="fa fa-male"></i>这是一个减肥方法。</li>
+                <li><i class="fa fa-heart"></i> 芥末可防止食物中毒。</li>
+                <li><i class="fa fa-battery-three-quarters"style></i>&nbsp;给您能量。</li>
+              </ul>
+              <p>
+                相对于点些沙拉，反而吃一盘装满寿司的寿司，然后修复蛋白质会更好。
+                <br>
+                芥末显然抑制了可引起食物中毒的细菌！
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Whu Us Section ======= -->
+    <section id="why-us" class="why-us"style=' background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(<%= asset_path'yoshirobata/yoshifont.png' %>) center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
+      <div class="container" >
+
+
+        <div class="section-title fade-in">
+          <h2 style="color:white;">为什么选择 <span>我们的日本餐厅</span></h2>
+          <p style="color:white;">提供好的食品体验，尽可能的满足当地人对日本餐厅的喜爱以及热爱</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>实惠</h4>
+              <p>我们希望为客户提供优质的食物。当然，也不会忽略实惠的价格。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>充足的食物分量</h4>
+              <p>当地文化比较喜爱大分食物。这也在我们的考虑之一。</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4>价值</h4>
+              <p>寻找能够很好地衡量食品质量和价格的价值。</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Whu Us Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials" style='background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(<%= asset_path'yoshirobata/sushiroll.jpg' %>) center no-repeat; background-size: cover; background-position: center;background-repeat: no-repeat;'>
+      <div class="container">
+
+        <div class="section-title">
+          <h2>当地日本人<span>吃寿司</span>方法</h2>
+          <p>您是否知道大多数时候我们使用错误的方式来吃寿司。</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">用手吃寿司</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">仅将鱼浸入酱油中</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">使用筷子礼仪</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">不要将酱油和芥末混合</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>确保手是干净的</h3>
+                    <p class="font-italic">吃寿司和握寿司的传统方法（可能是您惯常看到的）用手吃。</p>
+                    <p></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="<%= asset_path('yoshirobata/handsushi.jpg') %>" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>不要把米饭蘸酱油</h3>
+                    <p class="font-italic"></p>
+                    <p>大米不应该碰到酱油。它已经由厨师调味，并且大米在蘸酱过程中可能会破裂。仅鱼/海鲜/鸡蛋应接触液体。</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="<%= asset_path('yoshirobata/sushifish.jpg') %>" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>用筷子吃寿司</h3>
+                    <p class="font-italic"></p>
+                    <p>不要将筷子揉在一起。不使用时，应将它们平行放置在支架或酱油盘上。用餐结束后，也应将它们放置在那里。</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="<%= asset_path('yoshirobata/chopstick.jpg') %>" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>将芥末和生姜与寿司搭配使用</h3>
+                    <p class="font-italic">通过混合芥末将酱油变成浑浊不是吃寿司的正确方法.</p>
+                    <p>如果需要添加芥末，请用筷子或生姜片将其涂在鱼上。用筷子上多余的芥末食用也被认为是不好的形式。</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="<%= asset_path('yoshirobata/sushitop.jpg') %>" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+
+
+   <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="portfolio wow fadeInUp">
+    <div class="container-fluid">
+
+        <div class="section-title">
+          <h2> 我们的<span> 地点</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-kepong">Kepong</li>
+              <li data-filter=".filter-kuchai">Kuchai Lama</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong ">
+             <div class="gallery-item menu-content">
+              <a href=" <%= asset_path('yoshirobata/restaurant6.jpg') %>" class="venobox"  title="Kepong 1" data-gall="gallery-item">
+                <img src=" <%= asset_path('yoshirobata/restaurant6.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant8.jpg') %>" class="venobox"  title="Kepong 2" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant8.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant7.jpg') %>" class="venobox"  title="Kepong 3" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant7.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong ">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant1.jpg') %>" class="venobox"  title="Kepong 4" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant1.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant2.jpg') %>" class="venobox"  title="Kepong 5" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant2.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant4.jpg') %>" class="venobox"  title="Kepong 6" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant4.jpg') %>" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant5.jpg') %> " class="venobox"  title="Kepong 7" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/restaurant5.jpg') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kepong">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/restaurant3.jpg') %>" class="venobox"  title="Kepong 8" data-gall="gallery-item">
+                  <img src="<%= asset_path('yoshirobata/restaurant3.jpg') %>" alt="" class="img-fluid">
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/sushi1.png') %> " class="venobox"  title="Sushi 1" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/sushi1.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai1.png') %> " class="venobox"  title="Sushi 2" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai1.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div> 
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai2.png') %> " class="venobox"  title="Sushi 3" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai2.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai3.png') %> " class="venobox"  title="Sushi 4" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai3.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai4.png') %> " class="venobox"  title="Sushi 5" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai4.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai5.png') %> " class="venobox"  title="Sushi 6" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai5.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>          
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/sushi7.png') %> " class="venobox"  title="Sushi 7" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/sushi7.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   
+          <div class="col-lg-3 col-md-4 portfolio-item filter-kuchai">
+            <div class="gallery-item menu-content">
+              <a href="<%= asset_path('yoshirobata/kuchai6.png') %> " class="venobox"  title="Sushi 8" data-gall="gallery-item">
+                <img src="<%= asset_path('yoshirobata/kuchai6.png') %> " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>             
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>联系</span>我们</h2>
+          <p>您可以通过whatapps使我们下达外送服务。除此之外，您还可以通过GPS到达我们的餐厅。</p>
+          <h2><span>Kepong</span></h2>
+        </div>
+      </div>
+
+    <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="fa fa-location-arrow"></i>
+              <h4>位置:</h4>
+              <p>No 60, Ground Floor, Vista Magna, Jalan Prima 1, Metro Prima, 52100 Kepong, Kuala Lumpur</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-clock-o "></i>
+              <h4>营业时间:</h4>
+              <p>星期一至星期日:<br>11:00 AM - 11:00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-envelope"></i>
+              <h4>电子邮件:</h4>
+              <p>yoshiyoshirobata.<br>official@gmail.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-phone"></i>
+              <h4>致电:</h4>
+              <p>+6 011-5555 7586 </p>
+            </div>
+          </div>
+        </div>
+
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh0mADiBHzDERJ6-WKaEKbRc&key=AIzaSyBRW_afzr56mGQf3vbzr2oNWXQ9_4JxGlw" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    <div class="container mt-5">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Kuchai Lama</span></h2>
+        </div>
+      </div>
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="fa fa-location-arrow"></i>
+              <h4>位置:</h4>
+              <p>1-G, Dinasti Sentral, Jalan Kuchai Maju 18, Off, Jalan Kuchai Lama, Kuchai Lama, 58200 Kuala Lumpur</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-clock-o "></i>
+              <h4>营业时间:</h4>
+              <p>星期一至星期四:<br>11:00 AM - 11:00 PM</p>
+              <p>星期五至星期日:<br>10:30 AM - 11:00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-envelope"></i>
+              <h4>电子邮件:</h4>
+              <p>yoshiyoshirobata.<br>official@gmail.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="fa fa-phone"></i>
+              <h4>致电:</h4>
+              <p>+6 011-5555 7586 </p>
+            </div>
+          </div>
+        </div>
+
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:Em8xLCBKYWxhbiBLdWNoYWkgTWFqdSAxOCwgS3VjaGFpIER5bmFzdHkgQ2VudHJhbCwgNTgyMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWEiMBIuChQKEgnXU_-abErMMREnM1cvlK-fQBABKhQKEgl9Uf-abErMMRHsKf3ztzPXsQ&key=AIzaSyBRW_afzr56mGQf3vbzr2oNWXQ9_4JxGlw" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Yoshi Yoshi Robata</h3>
+      <p>在正确的地方寻找鳗鱼的爱.</p>
+      <div class="social-links">
+
+        <a href="http://wa.me/601110501169" target="_blank"> <span><i class="fa fa-whatsapp"></i></span></a>
+        <a href="https://www.facebook.com/yoshirobata" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/yoshirobata/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>YOSHI YOSHI ROBATA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by TWEB COMMERCE SERVICES</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "jquery.sticky.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "mainyoshirobata.js"%>
+
+</body>
+
+</html>

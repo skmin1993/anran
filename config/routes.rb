@@ -166,5 +166,26 @@ Rails.application.routes.draw do
     end
 
    
-  root :to => 'yoshirobata#index', as: nil
+  root :to => 'yoshirobata/home#index', as: nil
+    namespace :yoshirobata do
+      resources :home, only: [:index] do
+        collection do 
+          get :cn
+        end
+    end
+    resources :menu, only: [:index] do
+       collection do
+        get :cn
+      end
+    end 
+      resources :recruit, only: [:index] do
+       collection do
+        get :cn
+      end
+    end
+    end
+
+
+
+  
 end
