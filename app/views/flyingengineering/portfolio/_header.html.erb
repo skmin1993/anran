@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+   <!-- Vendor CSS Files -->
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+  <!-- Vendor CSS Files -->
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "font-awesome.min.css" %>
+  <%= stylesheet_link_tag "icofont.min.css" %>
+  <%= stylesheet_link_tag "ionicons.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+  <%= stylesheet_link_tag "line-awesome.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "aos.css" %>
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "flyingengineeringstyle.css" %>
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v2.1.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto my-link"><a href="/welcome/index">FlyingEngineering</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+       <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li class="active"><%= link_to "Home", flyingengineering_home_index_path(anchor: "hero")%></li>
+          <li><%= link_to "About Us", flyingengineering_home_index_path(anchor: "about")%></li>
+          <li><a href="#service">Services</a></li>
+          <li class="drop-down dropdown-multicol2"><a href="#product">Portfolio</a>
+            <ul>
+              <li class="drop-down"><a href="#">Category 1 </a>
+                <ul>
+                  <li ><%= link_to "Awning", awning_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Awning Structure Fabrication", awning_structure_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Cage Fabrication", cage_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Cabinet Fabrication", cabinet_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Convenyor", convenyor_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Drain Cover", drain_cover_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Fencing", fencing_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Frame Fabrication Installation", frame_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Guardhouse Barrier", guardhouse_barrier_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Gutter Fabrication Installation", gutter_fabrication_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Category 2 </a>
+                <ul>
+                  <li><%= link_to "M_S Door Frame", door_frame_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "M_S Truss", truss_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Monkey Ladder & Zigzag Ladder", monkey_zigzag_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Piping Work", piping_work_flyingengineering_portfolio_index_path%></li>
+
+                  <li><%= link_to "Platform", platform_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "PVC Curtain", pvc_curtain_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Ramp fabrication", ramp_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Roofing Repair & Leaking Repair", roofing_repair_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+               <li class="drop-down"><a href="#">Category 3 </a>
+                <ul>
+                  <li><%= link_to "Safety Barrier Facbrication", safety_barrier_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Stainless Steel Ducting", stainless_steel_ducting_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Tank Fabrication", tank_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Trolley Fabrication", trolley_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Trolley Tray Repair & Replacement", trolley_track_repair_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Walk Way", walk_way_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Waste Bin Fabrication", waste_bin_fabrication_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Concrete </a>
+                <ul>
+                  <li><%= link_to "Concrete Work", concrete_work_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Concrete Kerb", concrete_kerb_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Concrete Plinth", concrete_plinth_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Custom </a>
+                <ul>
+                  <li><%= link_to "Custom Awning", custom_awning_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Racking", custom_racking_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Sink", custom_sink_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Stainless Steel", custom_stainless_steel_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Steel Work", custom_steel_work_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li><%= link_to "Other Services", others_flyingengineering_portfolio_index_path%></li>  
+            </ul>
+          </li>
+          <li>
+            <%= link_to "Clients", flyingengineering_home_index_path(anchor: "clients")%>
+           </li>          
+          <li><%= link_to "Contact", flyingengineering_home_index_path(anchor: "call-to-action")%></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+
+
+    </div>
+  </header><!-- End Header -->
