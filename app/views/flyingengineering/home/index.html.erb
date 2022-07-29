@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flying Engineering</title>
+  <meta content="Maintaining work for factory including steel & iron work , concrete & cement ,roofing" name="descriptison">
+  <meta content="Precision Machine Part, Fabricated jig & Fixture, Steel & Iron Work (Metal), Welding Iron & Stainless Steel, Concrete & Cement Work, Roofing Replace & Repair, Painting Factory & Office, On Site Machine Repairing & Installation, Installation Services, Extended Work, Piping (Install & amendment), Factory & Office Renovation" name="keywords">
+ 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Vendor CSS Files -->
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+  <%= stylesheet_link_tag "font-awesome.min.css" %>
+  <%= stylesheet_link_tag "ionicons.min.css" %>
+  <%= stylesheet_link_tag "venobox.css" %>
+  <%= stylesheet_link_tag "line-awesome.min.css" %>
+  <%= stylesheet_link_tag "owl.carousel.min.css" %>
+  <%= stylesheet_link_tag "aos.css" %>
+
+
+
+  <!-- Template Main CSS File -->
+  <%= stylesheet_link_tag "flyingengineeringstyle.css" %>
+ <!-- =======================================================
+  * Template Name: Rapid - v2.2.0
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto my-link"><a href="/home/index">FlyingEngineering</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="main-nav d-none d-lg-block">
+        <ul>
+          <li class="active"><%= link_to "Home", flyingengineering_home_index_path(anchor: "hero")%></li>
+          <li><%= link_to "About Us", flyingengineering_home_index_path(anchor: "about")%></li>
+          <li><a href="#service">Services</a></li>
+          <li class="drop-down dropdown-multicol2"><a href="#product">Portfolio</a>
+            <ul>
+              <li class="drop-down"><a href="#">Category 1 </a>
+                <ul>
+                  <li ><%= link_to "Awning", awning_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Awning Structure Fabrication", awning_structure_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Cage Fabrication", cage_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Cabinet Fabrication", cabinet_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Convenyor", convenyor_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Drain Cover", drain_cover_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Fencing", fencing_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Frame Fabrication Installation", frame_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Guardhouse Barrier", guardhouse_barrier_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Gutter Fabrication Installation", gutter_fabrication_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Category 2 </a>
+                <ul>
+                  <li><%= link_to "M_S Door Frame", door_frame_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "M_S Truss", truss_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Monkey Ladder & Zigzag Ladder", monkey_zigzag_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Piping Work", piping_work_flyingengineering_portfolio_index_path%></li>
+
+                  <li><%= link_to "Platform", platform_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "PVC Curtain", pvc_curtain_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Ramp fabrication", ramp_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Roofing Repair & Leaking Repair", roofing_repair_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+               <li class="drop-down"><a href="#">Category 3 </a>
+                <ul>
+                  <li><%= link_to "Safety Barrier Facbrication", safety_barrier_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Stainless Steel Ducting", stainless_steel_ducting_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Tank Fabrication", tank_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Trolley Fabrication", trolley_fabrication_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Trolley Tray Repair & Replacement", trolley_track_repair_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Walk Way", walk_way_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Waste Bin Fabrication", waste_bin_fabrication_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Concrete </a>
+                <ul>
+                  <li><%= link_to "Concrete Work", concrete_work_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Concrete Kerb", concrete_kerb_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Concrete Plinth", concrete_plinth_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="#">Custom </a>
+                <ul>
+                  <li><%= link_to "Custom Awning", custom_awning_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Racking", custom_racking_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Sink", custom_sink_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Stainless Steel", custom_stainless_steel_flyingengineering_portfolio_index_path%></li>
+                  <li><%= link_to "Custom Steel Work", custom_steel_work_flyingengineering_portfolio_index_path%></li>
+                </ul>
+              </li>
+              <li><%= link_to "Other Services", others_flyingengineering_portfolio_index_path%></li>  
+            </ul>
+          </li>
+          <li>
+            <%= link_to "Clients", flyingengineering_home_index_path(anchor: "clients")%>
+           </li>          
+          <li><%= link_to "Contact", flyingengineering_home_index_path(anchor: "call-to-action")%></li>
+        </ul>
+      </nav><!-- .main-nav-->
+
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+        <div class="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+          <h2>We expert in <br>Engineering Work </h2>
+          <h4><span>Specialize in Automation Machine Parts, Fabrication & All Type Engineering & Construction Work.</span></h4>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+              <img src="<%= asset_path'flyingengineering/cutting.png' %>" alt="">
+  
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+              <h2>About Us</h2>
+              <h3>Building & Maintaining contractor with more than 20 years of operating history in Malaysia.</h3>
+              <p>Mainly focus on building various types of building including Industrial properties. We are expert in maintaining work for factory including:</p>
+              <ul>
+                <li><i class="fa fa-anchor"></i> Steel & Iron Work.</li>
+                <li><i class="fa fa-th"></i> Concrete & Cement.</li>
+                <li><i class="fa fa-home"></i> Roofing and etc.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+       <!-- ======= Portfolio Section ======= -->
+    <section id="service" class="service">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Services</h3>
+          <p>Part of our Natural of Business</p>
+        </header>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/machines.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/machines.png' %>" data-gall="portfolioGallery" class="link-preview venobox" title="Machine Part & Repair"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Machine Part </a></h4>
+                <h4>& Repair</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/fabricated.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/fabricated.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Fabricated Jig & Fixture"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Fabricated jig</a></h4>
+                <h4> & Fixture</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/steel.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/steel.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Steel & Iron Work"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Steel</a></h4>
+                <h4> & Iron Work</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/weldingsteel.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/weldingsteel.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Welding Iron & Stainless Steel"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Welding Iron</a></h4>
+                <h4> & Stainless Steel</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src=" <%= asset_path'flyingengineering/cementbuild.png' %>" class="img-fluid" alt="">
+                <a href=" <%= asset_path'flyingengineering/cementbuild.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Concrete & Cement Work"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Concrete & </a></h4>
+                <h4>Cement Work</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/roofrepair.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/roofrepair.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Roofing Replacee & Repair"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Roofing Replace</a></h4>
+                <h4> & Repair</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/painting.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/painting.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Painting Factory & Office"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Painting Factory </a></h4>
+                <h4>& Office</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/onsitemachines.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/onsitemachines.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="On Site Machine repairing & indtallation"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>On Site Machine </a></h4>
+                <h4>Repair & Install</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/pipework.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/pipework.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Piping Install & Amendment"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Piping Install </a></h4>
+                <h4>& Amendment</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 col-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<%= asset_path'flyingengineering/factoryrenovation.png' %>" class="img-fluid" alt="">
+                <a href="<%= asset_path'flyingengineering/factoryrenovation.png' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Factory & Office Renovation"><i class="fa fa-plus"></i></a>
+                <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a>Factory & </a></h4>
+                <h4>Office Renovation</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+      <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+        <div class="owl-carousel clients-carousel">
+          <img src="<%= asset_path'flyingengineering/KYB.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/yeos.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/boh.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/darco.jpg'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/southernsteel.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/topglove.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/sunwaypaving.jpg'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/shell.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/lamsoon.jpg'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/gpglass.jpg'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/scientex.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/ccm.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/abledairies.png'%>" alt="">
+          <img src="<%= asset_path'flyingengineering/ableperfect.png'%>" alt="">
+        </div>
+        <br><br>
+        <ul class="mylist">
+          <div data-aos="zoom-in" >
+            <li>Able Perfect Sdn Bhd</li>  
+            <li>Aoba Technology (M) Sdn Bhd</li>
+            <li>Benhock Civil & Engineering Work</li>
+            <li>Bekaert Shah Alam Sdn Bhd</li>
+            <li>Bao Dun Hardware Trading</li>
+            <li>CJWKR Enterprise</li>
+            <li>DMJ Eng & Construction Sdn Bhd</li>
+            <li>Extenta Enterprise</li>
+            <li>Gaia Plas Sdn Bhd</li>
+            <li>Intra Facilities Platform Sdn Bhd</li>
+            <li>Infinite Management Sdn Bhd</li>
+            <li>LJK Esteem Properties Sdn Bhd</li>
+            <li>Livin Space Concept</li>
+            <li>MTCY Flooring & Build </li>
+            <li>Noripharma Sdn Bhd </li>
+            <li>OPW Malaysia Sdn Bhd </li>
+            <li>Plastech Manufacturing Sdn Bhd </li>
+            <li>Pacestar Industries Sdn Bhd </li>
+            <li>Quest Media Sdn Bhd </li>
+            <li>Rhenus Logistics Sdn Bhd </li>
+            <li>Restoran Bluesky Mamak </li>
+            <li>Sunway Spun Pile (M) Sdn Bhd </li>
+            <li>Sunway Paving Solution Sdn Bhd </li>
+            <li>Southern PC Steel Sdn Bhd </li>
+            <li>Sun HealthCare (M) Sdn Bhd </li>
+            <li>Scientex Industries Group Sdn Bhd </li>
+            <li> Sri Pushpam Recycling Sdn Bhd </li>
+            <li> Taiko Marketing Sdn Bhd </li>
+            <li> Taiko Resource Sdn Bhd </li>
+            <li> TK Fantastic Sdn Bhd </li>
+            <li> Tele-Paper (M) Sdn Bhd </li>
+            <li> Trocellen Sea Sdn Bhd </li>
+            <li> Usahawan Bersama Teknik Sdn Bhd </li>
+            <li> Yeo Hiap Seng Trading Sdn Bhd </li>
+            <li> Y & S Industry </li>
+            <li> Agri Asia Refinery Sdn Bhd </li>
+            <li> Alunan Asa Sdn Bhd </li>
+            <li> Anglo Asia Aluminium Smelter Sdn Bhd </li>
+            <li> Avenue Woven Sdn Bhd </li>
+            <li> Arif Benar Sdn Bhd </li>
+            <li> A & T Eng & Construction Works </li>
+            <li> Breezway (M) Sdn Bhd </li>
+            <li> Bon Food Industries Sdn Bhd </li>
+            <li> Chemway Sdn Bhd </li>
+            <li> Da Biao Design Sdn Bhd </li>
+            <li> Southern Steel Mesh (M) Sdn Bhd </li>
+            <li> Top Glove Sdn Bhd </li>
+            <li> PAOS INDUSTIAL SDN BHD </li>
+            <li> SCIENTEX SDN BHD (SHAH ALAM) </li>
+            <li> ETC....... </li>
+
+
+          </div>
+        </ul>
+
+      </div>
+    </section><!-- End Clients Section -->  
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Portfolio</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-awning">Awning </li>
+              <li data-filter=".filter-awningstructure">Awning Structure Fabrication</li>
+              <li data-filter=".filter-cagefabric">Cage Fabrication</li>
+              <li data-filter=".filter-cabinetfabric">Cabinet Fabricate</li>
+              <li data-filter=".filter-kerb">Concrete Kerb</li>
+              <li data-filter=".filter-plinth">Concrete Plinth</li>
+              <li data-filter=".filter-work">Concrete Work</li>
+              <li data-filter=".filter-convenyor">Convenyor</li>
+              <li data-filter=".filter-customawming">Custom Awming</li>
+              <li data-filter=".filter-customrack">Custom Racking</li>
+              <li data-filter=".filter-customsink">Custom Sink</li>
+              <li data-filter=".filter-customstainlesssteel">Custom Stainless Steel</li>
+              <li data-filter=".filter-customsteelwork">Custom Steel Work</li>
+              <li data-filter=".filter-draincover">Drain Cover</li>
+              <li data-filter=".filter-fencing">Fencing</li>
+              <li data-filter=".filter-framefabrication">Frame Fabrication</li>
+              <li data-filter=".filter-guardhousebarrier">Guardhouse Barrier</li>
+              <li data-filter=".filter-gutterfabrication">Gutter Fabrication </li>
+              <li data-filter=".filter-doorframe">Door Frame</li>
+              <li data-filter=".filter-truss">Truss</li>
+              <li data-filter=".filter-ladder">Monkey & Zigzag Ladder </li>
+              <li data-filter=".filter-others">Others</li>
+              <li data-filter=".filter-pipingwork">Piping Work</li>
+              <li data-filter=".filter-platform">Platform</li>
+              <li data-filter=".filter-PVCCurtain">PVC Curtain</li>
+              <li data-filter=".filter-rampfabrication">Ramp fabrication</li>
+              <li data-filter=".filter-roofingrepair">Roofing Repair</li>
+              <li data-filter=".filter-safetybarrierfabrication">Safety Barrier Facbrication</li>
+              <li data-filter=".filter-safetycover">Safety Cover</li>
+              <li data-filter=".filter-stainlesssteelducting">Stainless Steel Ducting</li>  
+              <li data-filter=".filter-tankfabrication">Tank Fabrication</li>  
+              <li data-filter=".filter-trolleyfabrication">Trolley Fabrication</li>
+              <li data-filter=".filter-trolleytrackrepair">trolley track repair</li> 
+              <li data-filter=".filter-walkway">Walk Way</li>
+              <li data-filter=".filter-wastebinfabrication">Waste Bin Fabrication</li> 
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-awningstructure">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/awningstructure4.jpg' %> "style=" max-height:400px; max-width:600px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Awning Structure</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/awningstructure4.jpg' %> " data-gall="portfolioGallery" title="Awning Structure" class="link-preview venobox"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-awning" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/awning1.jpg' %>"style=" max-height:400px; max-width:600px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Awning</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/awning1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title=" Awning"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-cabinetfabric" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/cabinet_fabrication1.jpg' %>"style=" max-height:400px; max-width:470px;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Cabinet Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/cabinet_fabrication1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Cabinet Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-cagefabric" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/cage1.jpg' %> " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Cage Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/cage1.jpg' %> " class="link-preview venobox" data-gall="portfolioGallery" title="Cage Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-work" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/concretework2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Concrete Work</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/concretework2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Concrete Work"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-kerb" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/concretekerb2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Concrete Kerb</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/concretekerb2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Concrete Work"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-plinth" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/concreteplinth2.jpg' %> " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Concrete Plinth</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/concreteplinth2.jpg' %> " class="link-preview venobox" data-gall="portfolioGallery" title="Concrete Work"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-convenyor" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/convenyor1.jpg' %> " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Convenyor</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/convenyor1.jpg' %> " class="link-preview venobox" data-gall="portfolioGallery" title="Convenyor"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-customawming" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/customawning1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Custom Awning </a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/customawning1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Custom Awming"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-customrack" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/customracking2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Custom Racking</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/customracking2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Custom Racking"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-customsink" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/customsink1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Custom Racking</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/customsink1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Custom Racking"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-customstainlesssteel">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/customsteel4.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Custom Stainless </a></h4><h4><a>  Steel</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/customsteel4.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Custom Stainless Steel"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-customsteelwork" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/customsteelwork5.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Custom Steel Work</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/customsteelwork5.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Custom Steel Work"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>       
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-doorframe" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/msdoorframe1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Door Frame</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/msdoorframe1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Door Frame"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-draincover" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/draincover2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Drain Cover</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/draincover2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Drain Cover"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-fencing" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/fencing3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Fencing</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/fencing3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Fencing"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-framefabrication" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/framefrabrication3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Frame Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/framefrabrication3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Frame Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-guardhousebarrier" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/guardhousebarrier2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Guardhouse Barrier</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/guardhousebarrier2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Guardhouse Barrier"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-gutterfabrication" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/gutterfabricInstallation1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Gutter Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/gutterfabricInstallation1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Gutter Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-ladder" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/ladder&zigzag3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Monkey & </a></h4><h4><a>  Zigzag Ladder</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/ladder&zigzag3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Monkey & Zigzag Ladder"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-others" >
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/other2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Others</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/other2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Monkey & Zigzag Ladder"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-pipingwork" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/pipingwork5.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Piping Work</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/pipingwork5.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Piping Work"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-platform" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/platform16.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Platform</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/platform16.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Platform"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-PVCCurtain" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/pvcurtain1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>PVC Curtain</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/pvcurtain1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="PVC Curtain"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>              
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-rampfabrication" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/rampfabrication3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Ramp fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/rampfabrication3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Ramp fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>        
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-roofingrepair" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/roofingrepair2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Roofing Repair</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/roofingrepair2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Roofing Repair"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+           <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-safetybarrierfabrication" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/safetybarrierfacbrication8.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Safety Barrier </a></h4><h4><a>  Facbrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/safetybarrierfacbrication8.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Safety Barrier Facbrication "><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>                
+
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-safetycover" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/safetycover1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Safety Cover</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/safetycover1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Safety Cover"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>         
+         
+         <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-stainlesssteelducting" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/stainlesssteelducting1.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Stainless Steel </a></h4><h4><a>   Ducting</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/stainlesssteelducting1.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Stainless Steel Ducting"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-tankfabrication" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/tankfabrication3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Tank Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/tankfabrication3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Tank Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-trolleyfabrication" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/trolleyfabric3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Trolley Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/trolleyfabric3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Trolley Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-trolleytrackrepair" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/trolleytray2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Trolley Track Repair</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/trolleytray2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Trolley Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-truss" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/mstruss2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Truss</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/mstruss2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Truss"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-walkway" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/walkway2.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Walk Way</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/walkway2.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Walk Way"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> 
+  
+
+          <div class="col-lg-4 col-md-6 col-6 portfolio-item filter-wastebinfabrication" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="<%= asset_path'flyingengineering/wastebinfabric3.jpg' %>" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a>Waste Bin </a></h4><h4><a> Fabrication</a></h4>
+                <div>
+                  <a href="<%= asset_path'flyingengineering/wastebinfabric3.jpg' %>" class="link-preview venobox" data-gall="portfolioGallery" title="Waste Bin Fabrication"><i class="fa fa-plus"></i></a>
+                  <a href="https://wa.link/s5iye5" class="link-details" target="_blank" title="More Details"><i class="fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+  
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Mission & Vision</h3>
+            <p class="cta-text"> FLYING ENGINEERING vision is to grow and exceed customers' expectations not only in size. But first focus on product quality and value delivered.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" target="_blank" href="https://wa.link/s5iye5">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!--  End Call To Action Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <br>
+          <h2>Contact</h2>
+          <p>Just reach to us and get inquiry direct from us.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="fa fa-map"></i>
+              <h3>Our Address</h3>
+              <p> Lot 16013 & 16014,Perusahaan Ringgan Batu 5,<br>
+                    Jalan Jati, Off Batu 5 1⁄2, Jalan Meru 41050 Selangor.<br></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="fa fa-envelope"></i>
+              <h3>Email Us</h3>
+              <p>flyingengrg@gmail.com
+                <br>&nbsp;</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="fa fa-phone"></i>
+              <h3>Call Us</h3>
+              <p>+6 012-756 6280<br>&nbsp;</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-12 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJezv9pVRzDERRxpwdVJxppo&key=AIzaSyBRW_afzr56mGQf3vbzr2oNWXQ9_4JxGlw" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+ 
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-12">
+
+            <div class="row">
+
+              <div class="col-sm-6">
+
+                <div class="footer-info">
+                  <h3 style="font-size:25px;">FLYING ENGINEERING</h3>
+                  <p>We are mainly focus on building. Our job is design, install and maintain cost-effective and energy efficient systems for building services. Priority is the safety and provide good building product as well. </p>
+                </div>
+
+                <div class="social-links">
+                  <a href="" class="twitter"><i>&nbsp;</i></a>
+                  <a href="https://www.facebook.com/Flying-Engineering-Works-100171131918691" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="" class="instagram"><i>&nbsp;</i></a>
+                  <a href="https://wa.link/s5iye5" target="_blank"  class="whatapps"><i class="fa fa-whatsapp"></i></a>
+                </div>
+
+
+              </div>
+
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li class="my-link"><%= link_to "Home", flyingengineering_home_index_path(anchor: "hero")%></li>
+                    <li class="my-link"><%= link_to "About Us", flyingengineering_home_index_path(anchor: "about")%></li>
+                    <li class="my-link"><%= link_to "Services", flyingengineering_home_index_path(anchor: "service")%></li>
+                    <li class="my-link"><%= link_to "Clients", flyingengineering_home_index_path(anchor: "clients")%></li>
+                    <li class="my-link"><%= link_to "Contact", flyingengineering_home_index_path(anchor: "call-to-action")%></li>
+                  </ul>
+                </div>
+
+                <div class="footer-links">
+                  <h4>Contact Us</h4>
+                  <p>
+                    Lot 16013 & 16014, <br>
+                     Perusahaan Ringgan Batu 5,<br>
+                    Jalan Jati, Off Batu 5 1⁄2, <br>
+                    Jalan Meru 41050 Selangor.<br>
+                    <strong>Phone:</strong> +6 012-756 6280<br>
+                    <strong>Email:</strong> flyingengrg@gmail.com<br>
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div> 
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>FLYING ENGINEERING WORKS</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+      -->
+        Designed by <a href="https://bootstrapmade.com/">TWEB COMMERCE SERVICES</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-66R9FNJKCL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66R9FNJKCL');
+  </script>
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <%= javascript_include_tag "jquery.min.js"%>
+  <%= javascript_include_tag "bootstrap.bundle.min.js"%>
+  <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "validate.js"%>
+  <%= javascript_include_tag "isotope.pkgd.min.js"%>
+  <%= javascript_include_tag "counterup.min.js"%>
+  <%= javascript_include_tag "venobox.min.js"%>
+  <%= javascript_include_tag "owl.carousel.min.js"%>
+  <%= javascript_include_tag "jquery.waypoints.min.js"%>
+  <%= javascript_include_tag "aos.js"%>
+
+  <!-- Template Main JS File -->
+  <%= javascript_include_tag "flyingengineeringmain.js"%>
+
+</body>
+
+</html>
