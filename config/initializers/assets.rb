@@ -8,4 +8,4 @@ Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'vendo
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'javascript')
 
 # Precompile additional assets.
-Rails.application.config.assets.precompile += %w( bootstrap.min.css bootstrap.css )
+Rails.application.config.assets.precompile += %w[*.css *.js]
