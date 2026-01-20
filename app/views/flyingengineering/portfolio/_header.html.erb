@@ -47,7 +47,7 @@
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto my-link"><a href="/welcome/index">FlyingEngineering</a></h1>
+      <h1 class="logo mr-auto my-link"><a href="#">FlyingEngineering</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -55,7 +55,7 @@
         <ul>
           <li class="active"><%= link_to "Home", flyingengineering_home_index_path(anchor: "hero")%></li>
           <li><%= link_to "About Us", flyingengineering_home_index_path(anchor: "about")%></li>
-          <li><a href="#service">Services</a></li>
+          <li><%= link_to "Services", flyingengineering_home_index_path(anchor: "service")%></li>
           <li class="drop-down dropdown-multicol2"><a href="#product">Portfolio</a>
             <ul>
               <li class="drop-down"><a href="#">Category 1 </a>
