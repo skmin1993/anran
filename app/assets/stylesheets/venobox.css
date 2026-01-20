@@ -218,7 +218,9 @@ or at least read this note: http://i.imgur.com/7C0ws9e.gif
 }
 .vbox-container img{
     max-width: 100%;
+    max-height: 90vh;
     height: auto;
+    object-fit: contain;
 }
 .vbox-figlio{
     box-shadow: 0 0 12px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
