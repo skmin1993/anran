@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Our Portfolio – TWEB Commerce Services</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1a1a2e;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .brand {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    header .brand span { color: #e94560; }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 16px; }
+    .hero h1 span { color: #e94560; }
+    .hero p { font-size: 17px; color: #ccc; max-width: 560px; margin: 0 auto; }
+
+    /* ── Filter Tabs ── */
+    .filter-bar {
+      text-align: center;
+      padding: 36px 20px 10px;
+    }
+    .filter-bar a {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 22px;
+      border-radius: 30px;
+      border: 2px solid #e94560;
+      color: #e94560;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+    .filter-bar a:hover, .filter-bar a.active {
+      background: #e94560;
+      color: #fff;
+    }
+
+    /* ── Portfolio Grid ── */
+    .portfolio-grid {
+      padding: 30px 40px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .portfolio-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 20px 22px;
+    }
+    .card-tag {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #e94560;
+      margin-bottom: 6px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .card-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e94560;
+    }
+    .card-link i { margin-left: 4px; }
+
+    /* ── Footer ── */
+    footer {
+      background: #1a1a2e;
+      color: #aaa;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+    footer a { color: #e94560; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .portfolio-grid { padding: 20px 16px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="/" class="brand">TWEB <span>Commerce</span></a>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Our <span>Portfolio</span></h1>
+    <p>A showcase of websites and digital solutions we've built for our clients.</p>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="filter-bar">
+    <a href="#" class="active" data-filter="all">All</a>
+    <a href="#" data-filter="anran">Anran</a>
+    <a href="#" data-filter="bctherbal">BC Herbal</a>
+    <a href="#" data-filter="chinsan">Chin San</a>
+    <a href="#" data-filter="flyingengineering">Flying Engineering</a>
+    <a href="#" data-filter="iconmaker">Iconmaker</a>
+    <a href="#" data-filter="viennahome">Vienna Home</a>
+    <a href="#" data-filter="yoshirobata">Yoshirobata</a>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+
+    <!-- Anran -->
+    <a class="portfolio-card" href="/anran" id="anran" data-category="anran">
+      <img class="card-img" src="<%= asset_path('anran/greentowel.jpg') %>" alt="Anran">
+      <div class="card-body">
+        <div class="card-tag">Wellness</div>
+        <div class="card-title">Anran Nanometer</div>
+        <p class="card-desc">Bio-wave sauna wellness centre offering deep detox and health therapy services.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- BC Herbal -->
+    <a class="portfolio-card" href="/bctherbal" id="bctherbal" data-category="bctherbal">
+      <img class="card-img" src="<%= asset_path('bctherbal/homepageherbal.png') %>" alt="BC Herbal">
+      <div class="card-body">
+        <div class="card-tag">Herbal Products</div>
+        <div class="card-title">BC Herbal</div>
+        <p class="card-desc">Traditional herbal products and remedies for health and wellness.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Chin San -->
+    <a class="portfolio-card" href="/chinsan" id="chinsan" data-category="chinsan">
+      <img class="card-img" src="<%= asset_path('chinsan/animal-feed.jpg') %>" alt="Chin San">
+      <div class="card-body">
+        <div class="card-tag">Animal Feed</div>
+        <div class="card-title">Chin San</div>
+        <p class="card-desc">Premium animal feed supplier for poultry, livestock, and aquaculture.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Flying Engineering -->
+    <a class="portfolio-card" href="/flyingengineering/home" id="flyingengineering" data-category="flyingengineering">
+      <img class="card-img" src="<%= asset_path('flyingengineering/awning1.jpg') %>" alt="Flying Engineering">
+      <div class="card-body">
+        <div class="card-tag">Fabrication</div>
+        <div class="card-title">Flying Engineering</div>
+        <p class="card-desc">Steel fabrication, awning, roofing, and custom metalwork solutions.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Iconmaker -->
+    <a class="portfolio-card" href="/iconmaker" id="iconmaker" data-category="iconmaker">
+      <img class="card-img" src="<%= asset_path('iconmaker/niceview.jpg') %>" alt="Iconmaker">
+      <div class="card-body">
+        <div class="card-tag">Interior Design</div>
+        <div class="card-title">Iconmaker</div>
+        <p class="card-desc">Modern interior design services for homes and commercial spaces.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Vienna Home -->
+    <a class="portfolio-card" href="/viennahome" id="viennahome" data-category="viennahome">
+      <img class="card-img" src="<%= asset_path('viennahome/sofafont.png') %>" alt="Vienna Home">
+      <div class="card-body">
+        <div class="card-tag">Furniture</div>
+        <div class="card-title">Vienna Home</div>
+        <p class="card-desc">Elegant furniture and sofa solutions for your living space.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Yoshirobata -->
+    <a class="portfolio-card" href="/yoshirobata" id="yoshirobata" data-category="yoshirobata">
+      <img class="card-img" src="<%= asset_path('yoshirobata/Menu for No Price - view - L-1.jpg') %>" alt="Yoshirobata">
+      <div class="card-body">
+        <div class="card-tag">Restaurant</div>
+        <div class="card-title">Yoshirobata</div>
+        <p class="card-desc">Japanese robatayaki restaurant with an authentic dining experience.</p>
+        <span class="card-link">View Site <i class="fa fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <%= Time.now.year %> <a href="http://tweb.com.my/">TWEB Commerce Services</a>. All Rights Reserved.
+  </footer>
+
+  <%= javascript_include_tag "jquery.min.js" %>
+  <script>
+    document.querySelectorAll('.filter-bar a').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var filter = this.dataset.filter;
+
+        // Update active button
+        document.querySelectorAll('.filter-bar a').forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+
+        // Show/hide cards
+        document.querySelectorAll('.portfolio-card').forEach(function(card) {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  <%= javascript_include_tag "bootstrap.bundle.min.js" %>
+
+</body>
+</html>

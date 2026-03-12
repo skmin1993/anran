@@ -3,7 +3,30 @@ Rails.application.routes.draw do
 
 
 
-    root :to => 'flyingengineering/home#index', as: nil
+    constraints DomainConstraint.new(['flyingengineering.com', 'www.flyingengineering.com']) do
+      root 'flyingengineering/home#index', as: :flyingengineering_root
+    end
+
+    root 'portfolio#index'
+
+    get '/anran',      to: 'anran#index'
+    get '/anran/my',   to: 'anran#my'
+    get '/bctherbal',  to: 'bctherbal#index'
+    get '/chinsan',    to: 'chinsan#index'
+    get '/iconmaker',  to: 'iconmaker#index'
+    get '/iconmaker/about', to: 'iconmaker#about'
+    get '/viennahome', to: 'viennahome#index'
+    namespace :yoshirobata do
+      resources :home,    only: [:index] do
+        collection { get :cn }
+      end
+      resources :menu,    only: [:index] do
+        collection { get :cn }
+      end
+      resources :recruit, only: [:index]
+    end
+    get '/yoshirobata', to: 'yoshirobata/home#index'
+    get '/flyingengineering', to: 'flyingengineering/home#index'
      namespace :flyingengineering, only: [:index] do
        resources :home, only: [:index] do
           collection do 
